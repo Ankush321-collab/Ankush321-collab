@@ -1,4 +1,5 @@
 <h1 align="center">Hi 👋, I'm Ankush Adhikari</h1>
+<p align='center'> I love building modern web applications using MERN Stack (MongoDB, Express, React, Node.js) and integrating powerful features like JWT authentication, MongoDB Atlas, and Cloud APIs.</p>
 <h3 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&center=true&vCenter=true&width=435&lines=Full-Stack+Web+Developer+from+Nepal;MERN+Stack+Enthusiast;Lifelong+Learner+%F0%9F%93%9A;Building+smart+solutions+with+code" alt="Typing SVG" />
 </h3>
