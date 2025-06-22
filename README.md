@@ -16,52 +16,60 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankush321-collab&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 
-<!-- Animated Tech Stack -->
+<!-- Animated Tech Stack with extra skills -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40" style="animation: bounce 2s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40" style="animation: bounce 2.1s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40" style="animation: bounce 2.2s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="40" height="40" style="animation: bounce 2.3s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40" style="animation: bounce 2.4s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40" style="animation: bounce 2.5s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40" style="animation: bounce 2.6s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="40" height="40" style="animation: bounce 2.7s infinite;" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg" alt="Apache" width="40" height="40" style="animation: bounce 2.8s infinite;" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=24&color=00FF00&lines=🚀+React+|+Node.js+|+Express+|+MongoDB;🎯+Redux+|+Tailwind+|+JWT+|+Firebase;💻+Bootstrap+|+MySQL+|+PHP+|+Apache" alt="Typing animation" />
 </p>
-
-<style>
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-a.project-logo {
-  margin: 1rem;
-  display: inline-block;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-a.project-logo:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 8px #00ff66);
-}
-</style>
 
 ---
 
-## 🔭 Projects
+## 🛠️ Languages & Tools  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40" />
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg" alt="Apache" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40" />
+</p>
+
+---
+
+## 🔭 What I'm Working On  
 
 <p align="center">
-  <a href="https://github.com/Ankush321-collab/hostel_management_sysytem" target="_blank" class="project-logo" title="Hostel Management System">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Hostel Management System" width="80" height="80" />
-  </a>
-  <a href="https://github.com/Ankush321-collab/ToDOList" target="_blank" class="project-logo" title="ToDOList">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="ToDOList" width="80" height="80" />
-  </a>
-  <a href="https://github.com/Ankush321-collab/deeseek-clone" target="_blank" class="project-logo" title="Deeseek Clone">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Deeseek Clone" width="80" height="80" />
-  </a>
-  <a href="https://github.com/Ankush321-collab/Computer-point" target="_blank" class="project-logo" title="Computer Point">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="Computer Point" width="80" height="80" />
-  </a>
+
+<a href="https://github.com/Ankush321-collab/hostel_management_sysytem" target="_blank" rel="noopener" title="Hostel Management System">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Hostel Management System" width="80" height="80" style="margin: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';"/>
+</a>
+
+<a href="https://github.com/Ankush321-collab/ToDOList" target="_blank" rel="noopener" title="To-Do List Project">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="ToDOList" width="80" height="80" style="margin: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';"/>
+</a>
+
+<a href="https://github.com/Ankush321-collab/deeseek-clone" target="_blank" rel="noopener" title="Deeseek Clone">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Deeseek Clone" width="80" height="80" style="margin: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';"/>
+</a>
+
+<a href="https://github.com/Ankush321-collab/Computer-point" target="_blank" rel="noopener" title="Computer Point">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="Computer Point" width="80" height="80" style="margin: 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';"/>
+</a>
+
+</p>
+
+<p align="center" style="font-size: 1.1em; max-width: 600px;">
+  <b>Projects:</b><br/>
+  - Developing a secure <a href="https://github.com/Ankush321-collab/hostel_management_sysytem" target="_blank">Hostel Management System</a> with facial recognition & gate-pass QR 📷<br/>
+  - Building a <a href="https://github.com/Ankush321-collab/ToDOList" target="_blank">To-Do List app</a> for productivity 📋<br/>
+  - Developing a <a href="https://github.com/Ankush321-collab/deeseek-clone" target="_blank">Deeseek Clone</a> - a collaborative project 🚀<br/>
+  - Working on <a href="https://github.com/Ankush321-collab/Computer-point" target="_blank">Computer Point</a> - PHP based system 💻<br/>
 </p>
 
 ---
