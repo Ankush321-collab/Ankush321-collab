@@ -69,7 +69,7 @@
   - Developing a secure <a href="https://github.com/Ankush321-collab/hostel_management_sysytem" target="_blank">Hostel Management System</a> with facial recognition & gate-pass QR 📷<br/>
   - Building a <a href="https://github.com/Ankush321-collab/ToDOList" target="_blank">To-Do List app</a> for productivity 📋<br/>
   - Developing a <a href="https://github.com/Ankush321-collab/deeseek-clone" target="_blank">Deeseek Clone</a> - a collaborative project 🚀<br/>
-  - Working on <a href="https://github.com/Ankush321-collab/Computer-point" target="_blank">Computer Point</a> - PHP based system 💻<br/>
+  - Working on <a href="https://github.com/Ankush321-collab/Computer-point" target="_blank">Computer Point</a> - react based system 💻<br/>
 </p>
 
 ---
