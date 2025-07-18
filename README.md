@@ -5,14 +5,14 @@
   I specialize in building modern MERN Stack applications with cloud integrations, JWT, and secure APIs.
 </p>
 
-<h1 align="center"> 
+<h1 align="center">  
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=00F72E&center=true&vCenter=true&width=600&lines=Namaste+%F0%9F%99%8F%2C+I'm+Ankush+Adhikari;Full-Stack+Developer+%7C+MERN+Specialist;Building+Digital+Experiences+with+Code" alt="Typing SVG" />
   </a>
 </h1>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="ankush321-collab" /> 
+  <img src="https://komarev.com/ghpvc/?username=ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="ankush321-collab" />  
   <a href="https://twitter.com/ankush"><img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow"></a>
 </p>
 
@@ -23,6 +23,8 @@
   </a>
 </div>
 
+---
+
 ## 🏆 GitHub Highlights
 
 <p align="center">
@@ -30,8 +32,16 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ankush321-collab&show_icons=true&theme=radical" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankush321-collab&layout=compact&theme=radical" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=ankush321-collab&show_icons=true&theme=radical&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankush321-collab&layout=compact&theme=radical&hide_border=true" height="170"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ankush321-collab&theme=radical&hide_border=true" height="170" alt="GitHub Streak Stats"/>
+</p>
+
+<p align="center">
+  <img src="https://activity-graph.best-flutter.cyou/?username=ankush321-collab&theme=radical" alt="GitHub Activity Graph"/>
 </p>
 
 ---
