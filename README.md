@@ -16,33 +16,41 @@
   <a href="https://twitter.com/ankush"><img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow"></a>
 </p>
 
-
-<div align="center">
-  <a href="https://wakatime.com/@ankush123"> 
-    <img src="https://wakatime.com/badge/user/ankush123.svg" alt="Wakatime Stats">
-  </a>
-</div>
-
 ---
 
-## 🏆 GitHub Highlights
+<h2 align="center">📊 GitHub & Coding Stats 📈</h2>
 
-<p align="center">
+<div align="center">
+  <details>
+    <summary>Click to view Wakatime Stats</summary>
+    <a href="https://wakatime.com/@ankush123"> 
+      <img src="https://wakatime.com/badge/user/ankush123.svg" alt="Wakatime Stats">
+    </a>
+  </details>
+</div>
+
+<br>
+
+<div align="center">
+  <h3>🏆 GitHub Trophies</h3>
   <img src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="Trophies" />
-</p>
+</div>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" height="170"/>
-</p>
+<br>
 
-<p align="center">
+<div align="center">
+  <h3>🔥 GitHub Stats & Top Languages</h3>
+  <img src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" height="170" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" height="170" alt="Top Languages"/>
+</div>
+
+<br>
+
+<div align="center">
+  <h3>🗓️ GitHub Streak & Activity</h3>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankush321-collab&theme=radical&hide_border=true" height="170" alt="GitHub Streak Stats"/>
-</p>
-
-<p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph"/>
-</p>
+</div>
 
 ---
 
