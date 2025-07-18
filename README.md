@@ -31,11 +31,11 @@
 </p>
 
 <p align="center">
-  <img width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <img width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img width="400" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
+  <img width="650" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
 </p>
 
 
