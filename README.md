@@ -22,12 +22,12 @@
 <h2 align="center">📊 GitHub & Coding Stats</h2>
 
 <p align="center">
-  <img width="800" src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
+  <img width="600" src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
 </p>
 
 <p align="center">
-  <img width="480" src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
-  <img width="480" src="https://github-readme-streak-stats.herokuapp.com/?user=Ankush321-collab&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
+  <img width="500" src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
+  <img width="500" src="https://github-readme-streak-stats.herokuapp.com/?user=Ankush321-collab&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@
 </p>
 
 <p align="center">
-  <img width="1000" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
+  <img width="600" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
 </p>
 
 
