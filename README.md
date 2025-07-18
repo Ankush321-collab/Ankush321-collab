@@ -15,11 +15,6 @@
   <img src="https://komarev.com/ghpvc/?username=ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="ankush321-collab" /> 
   <a href="https://twitter.com/ankush"><img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow"></a>
 </p>
-## 📊 WakaTime Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&theme=radical" alt="WakaTime Stats" />
-</p>
 
 
 <div align="center">
