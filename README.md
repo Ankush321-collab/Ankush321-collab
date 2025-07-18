@@ -1,15 +1,19 @@
-<h1 align="center">Hi 👋, I'm Ankush Adhikari</h1>
+<h1 align="center"> 
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=00F72E&center=true&vCenter=true&width=600&lines=Namaste+%F0%9F%99%8F%2C+I'm+Ankush+Adhikari;Full-Stack+Developer+%7C+MERN+Specialist;Building+Digital+Experiences+with+Code" alt="Typing SVG" />
+  </a>
+</h1>
 
 <p align="center">
-  A passionate <strong>Full-Stack Developer</strong> from Nepal 🇳🇵<br/>
-  I specialize in building modern MERN Stack applications with cloud integrations, JWT, and secure APIs.
+  <img src="https://komarev.com/ghpvc/?username=ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="ankush321-collab" /> 
+  <a href="https://twitter.com/ankush"><img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow"></a>
 </p>
 
-<h3 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=435&lines=Full-Stack+Web+Developer+🚀;MERN+Stack+Enthusiast+💻;Lifelong+Learner+📚;Cloud+and+API+Lover+☁️" alt="Typing SVG" />
-</h3>
-
----
+<div align="center">
+  <a href="https://wakatime.com/@ankush">
+    <img src="https://wakatime.com/badge/user/xxxx.svg" alt="Wakatime Stats">
+  </a>
+</div>
 
 ## 🏆 GitHub Highlights
 
