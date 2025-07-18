@@ -12,14 +12,14 @@
 </h1>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="ankush321-collab" />  
+  <img src="https://komarev.com/ghpvc/?username=Ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="ankush321-collab" />  
   <a href="https://twitter.com/ankush"><img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow"></a>
 </p>
 
 
 <div align="center">
-  <a href="https://wakatime.com/@ankush">
-    <img src="https://wakatime.com/badge/user/xxxx.svg" alt="Wakatime Stats">
+  <a href="https://wakatime.com/@ankush123"> 
+    <img src="https://wakatime.com/badge/user/ankush123.svg" alt="Wakatime Stats">
   </a>
 </div>
 
@@ -28,20 +28,20 @@
 ## 🏆 GitHub Highlights
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="Trophies" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ankush321-collab&show_icons=true&theme=radical&hide_border=true" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankush321-collab&layout=compact&theme=radical&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" height="170"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ankush321-collab&theme=radical&hide_border=true" height="170" alt="GitHub Streak Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankush321-collab&theme=radical&hide_border=true" height="170" alt="GitHub Streak Stats"/>
 </p>
 
 <p align="center">
-  <img src="https://activity-graph.best-flutter.cyou/?username=ankush321-collab&theme=radical" alt="GitHub Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph"/>
 </p>
 
 ---
