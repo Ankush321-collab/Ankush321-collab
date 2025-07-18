@@ -22,7 +22,7 @@
 <h2 align="center">📊 GitHub & Coding Stats</h2>
 
 <p align="center">
-  <img width="600" src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
+  <img width="800" src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=onedark&no-frame=true&row=1&column=7" alt="GitHub Trophies" />
 </p>
 
 <p align="center">
@@ -31,11 +31,11 @@
 </p>
 
 <p align="center">
-  <img width="600" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <img width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img width="600" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
+  <img width="400" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
 </p>
 
 
