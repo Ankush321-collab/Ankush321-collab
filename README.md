@@ -35,7 +35,13 @@
 </p>
 
 <p align="center">
-  <img width="750" src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" alt="GitHub Activity Graph" />
+  <img 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark" 
+    alt="GitHub Activity Graph" 
+    width="100%" 
+    height="300px"
+    style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: transform 0.3s ease-in-out;"
+  />
 </p>
 
 
