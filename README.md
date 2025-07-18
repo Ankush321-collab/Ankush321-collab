@@ -1,3 +1,10 @@
+<h1 align="center">Hi 👋, I'm Ankush Adhikari</h1>
+
+<p align="center">
+  A passionate <strong>Full-Stack Developer</strong> from Nepal 🇳🇵<br/>
+  I specialize in building modern MERN Stack applications with cloud integrations, JWT, and secure APIs.
+</p>
+
 <h1 align="center"> 
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=00F72E&center=true&vCenter=true&width=600&lines=Namaste+%F0%9F%99%8F%2C+I'm+Ankush+Adhikari;Full-Stack+Developer+%7C+MERN+Specialist;Building+Digital+Experiences+with+Code" alt="Typing SVG" />
