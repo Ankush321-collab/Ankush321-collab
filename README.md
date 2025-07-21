@@ -1,4 +1,4 @@
-<h1 align="center">👋 Hi, I'm Ankush Adhikari</h1>
+<h1 align="center">👋 HI, I'm Ankush Adhikari</h1>
 
 <p align="center">
   <strong>Full-Stack Developer | MERN Specialist</strong><br/>
