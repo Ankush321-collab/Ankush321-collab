@@ -12,8 +12,10 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="Profile Views" />  
-  <a href="https://twitter.com/ankush"><img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow"></a>
+  <img src="https://komarev.com/ghpvc/?username=Ankush321-collab&label=Profile+Views&color=0e75b6&style=flat" alt="Profile Views" />
+  <a href="https://twitter.com/ankush">
+    <img src="https://img.shields.io/twitter/follow/ankush?style=social" alt="Twitter Follow">
+  </a>
 </p>
 
 ---
@@ -27,7 +29,7 @@
 
 <p align="center">
   <img width="500" src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
-  <img width="500" src="https://github-readme-streak-stats.herokuapp.com/?user=Ankush321-collab&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
+  <img width="500" src="https://streak-stats.demolab.com?user=Ankush321-collab&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
 </p>
 
 <p align="center">
@@ -43,7 +45,6 @@
     style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: transform 0.3s ease-in-out;"
   />
 </p>
-
 
 ---
 
