@@ -51,7 +51,8 @@
 ## 🚀 Tech Stack & Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mongodb,tailwind,bootstrap,php,mysql,java,cpp,python,firebase,github" alt="Tech Stack" />
+<img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mongodb,tailwind,bootstrap,php,mysql,java,cpp,python,numpy,pandas,matplotlib,sklearn,firebase,github" alt="Tech Stack" />
+
 </p>
 
 ---
