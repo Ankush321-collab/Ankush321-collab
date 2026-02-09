@@ -1,7 +1,7 @@
 <h1 align="center">👋 HI , I'm Ankush Adhikari !</h1>
 
 <p align="center">
-  <strong>  Full-Stack Developer | MERN Specialist</strong><br/>
+  <strong>  FFull-Stack Developer | MERN Specialist</strong><br/>
   Building Digital Experiences with Code & Passion 💻🌱
 </p>
 
