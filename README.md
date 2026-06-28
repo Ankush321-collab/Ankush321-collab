@@ -2,19 +2,10 @@
 
 <!-- ══ HEADER BANNER ══ -->
 
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&height=230&color=gradient&customColorList=0,2,2,5,30&text=Ankush%20Adhikari&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=FullStack%20Developer%20%7C%20MERN%20Specialist%20%7C%20Cloud%20%26%20AI%20Engineer&descSize=17&descAlignY=57"
-  width="100%"
-  alt="Ankush Adhikari"
-/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=gradient&customColorList=0,2,2,5,30&text=Ankush%20Adhikari&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=FullStack%20Developer%20%7C%20MERN%20Specialist%20%7C%20Cloud%20%26%20AI%20Engineer&descSize=17&descAlignY=57" width="100%" alt="Ankush Adhikari"/>
 
 <!-- ══ TYPING SVG ══ -->
-<a href="https://git.io/typing-svg">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=900&color=00F7FF&center=true&vCenter=true&width=750&lines=Namaste+%F0%9F%99%8F%2C+I%27m+Ankush+Adhikari!;Full-Stack+Developer+%7C+MERN+Specialist+%F0%9F%9A%80;Cloud-Native+CI%2FCD+%7C+Kafka+%7C+Docker+%E2%98%81%EF%B8%8F;Multi-Agent+AI+%26+LLM+Systems+Builder+%F0%9F%A4%96;Open+Source+Contributor+%7C+Problem+Solver+%F0%9F%94%A5"
-    alt="Typing SVG"
-  />
-</a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=900&color=00F7FF&center=true&vCenter=true&width=750&lines=Namaste+%F0%9F%99%8F%2C+I%27m+Ankush+Adhikari!;Full-Stack+Developer+%7C+MERN+Specialist+%F0%9F%9A%80;Cloud-Native+CI%2FCD+%7C+Kafka+%7C+Docker+%E2%98%81%EF%B8%8F;Multi-Agent+AI+%26+LLM+Systems+Builder+%F0%9F%A4%96;Open+Source+Contributor+%7C+Problem+Solver+%F0%9F%94%A5" alt="Typing SVG"/></a>
 
 <br/>
 
@@ -39,16 +30,9 @@
 
 </div>
 
-```yaml
-name: Ankush Adhikari
-role: Full-Stack Developer | MERN Specialist | Cloud & AI Engineer
-location: Nepal 🇳🇵
-focus: Cloud-native CI/CD · Multi-agent AI · Distributed systems
-stack: [Node.js, React, Next.js, PostgreSQL, Redis, Kafka, Docker]
-ai_ml: [LLMs, FastAPI Agents, Vector Embeddings, Scikit-Learn]
-cloud: [AWS S3, Firebase, MongoDB Atlas]
-fun_fact: "I turn coffee ☕ into distributed systems 💻"
-```
+🇳🇵 &nbsp;**Nepal** &nbsp;·&nbsp; 🚀 **MERN · Cloud · AI** &nbsp;·&nbsp; ☁️ **Kafka · Docker · AWS** &nbsp;·&nbsp; 🤖 **LLMs · Multi-Agent Systems**
+
+> *"I turn coffee ☕ into distributed systems 💻"*
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4" width="100%"/>
 
@@ -58,41 +42,21 @@ fun_fact: "I turn coffee ☕ into distributed systems 💻"
 
 ## 📊 GitHub Stats & Activity
 
-<img
-  src="https://github-trophies.vercel.app/?username=Ankush321-collab&theme=radical&no-frame=true&no-bg=false&margin-w=6&row=1&column=7"
-  alt="GitHub Trophies"
-  width="100%"
-/>
+<img src="https://github-trophies.vercel.app/?username=Ankush321-collab&theme=radical&no-frame=true&no-bg=false&margin-w=6&row=1&column=7" alt="GitHub Trophies" width="100%"/>
 
 <br/><br/>
 
-<img
-  width="48%"
-  src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=FF6E96&icon_color=00F7FF&text_color=c9d1d9&border_radius=12"
-  alt="GitHub Stats"
-/>
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=FF6E96&icon_color=00F7FF&text_color=c9d1d9&border_radius=12" alt="GitHub Stats"/>
 &nbsp;
-<img
-  width="48%"
-  src="https://streak-stats.demolab.com?user=Ankush321-collab&theme=radical&hide_border=true&background=0d1117&ring=FF6E96&fire=FF6E96&currStreakLabel=00F7FF&border_radius=12"
-  alt="GitHub Streak"
-/>
+<img width="48%" src="https://streak-stats.demolab.com?user=Ankush321-collab&theme=radical&hide_border=true&background=0d1117&ring=FF6E96&fire=FF6E96&currStreakLabel=00F7FF&border_radius=12" alt="GitHub Streak"/>
 
 <br/><br/>
 
-<img
-  width="44%"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF6E96&text_color=c9d1d9&langs_count=8&border_radius=12"
-  alt="Top Languages"
-/>
+<img width="44%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankush321-collab&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=FF6E96&text_color=c9d1d9&langs_count=8&border_radius=12" alt="Top Languages"/>
 
 <br/><br/>
 
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark&hide_border=true&bg_color=0d1117&color=FF6E96&line=00F7FF&point=ffffff&area=true&area_color=FF6E9615&radius=8"
-  alt="GitHub Activity Graph"
-  width="100%"
-/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark&hide_border=true&bg_color=0d1117&color=FF6E96&line=00F7FF&point=ffffff&area=true&area_color=FF6E9615&radius=8" alt="GitHub Activity Graph" width="100%"/>
 
 </div>
 
@@ -106,7 +70,7 @@ fun_fact: "I turn coffee ☕ into distributed systems 💻"
 
 </div>
 
-> **⚙️ Setup (one-time):** Copy [`.github/workflows/snake.yml`](.github/workflows/snake.yml) into your **`Ankush321-collab`** profile repo → go to **Actions tab** → click **"Run workflow"** once. The snake SVG auto-regenerates every 12 hours after that.
+
 
 <div align="center">
 
@@ -119,11 +83,7 @@ fun_fact: "I turn coffee ☕ into distributed systems 💻"
     media="(prefers-color-scheme: light)"
     srcset="https://raw.githubusercontent.com/Ankush321-collab/Ankush321-collab/output/github-snake.svg"
   />
-  <img
-    alt="GitHub Contribution Snake — run the workflow to activate"
-    src="https://raw.githubusercontent.com/Ankush321-collab/Ankush321-collab/output/github-snake-dark.svg"
-    width="100%"
-  />
+  <img alt="GitHub Contribution Snake — run the workflow to activate" src="https://raw.githubusercontent.com/Ankush321-collab/Ankush321-collab/output/github-snake-dark.svg" width="100%"/>
 </picture>
 
 </div>
@@ -133,6 +93,4 @@ fun_fact: "I turn coffee ☕ into distributed systems 💻"
 <!-- ══════════ FOOTER ══════════ -->
 <img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=gradient&customColorList=0,2,2,5,30&section=footer" width="100%"/>
 
-<div align="center">
-  <sub>Designed with ❤️ by <strong>Ankush Adhikari</strong> &nbsp;|&nbsp; Let's build something amazing together 🚀</sub>
-</div>
+
