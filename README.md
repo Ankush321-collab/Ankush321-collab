@@ -1,8 +1,7 @@
 <div align="center">
 
-<!-- ══ HEADER BANNER ══ -->
-
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=230&amp;color=gradient&amp;customColorList=0,2,2,5,30&amp;text=Ankush%20Adhikari&amp;fontSize=54&amp;fontColor=ffffff&amp;fontAlignY=36&amp;desc=FullStack%20Developer%20%7C%20MERN%20Specialist%20%7C%20Cloud%20%26%20AI%20Engineer&amp;descSize=17&amp;descAlignY=57" width="100%" alt="Ankush Adhikari"/>
+<!-- ══════════ FOOTER ══════════ -->
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=180&amp;color=gradient&amp;customColorList=0,2,2,5,30&amp;section=footer&amp;text=Ankush&amp;fontSize=48&amp;fontColor=ffffff&amp;fontAlignY=70&amp;animation=twinkling" width="100%"/>
 
 <!-- ══ TYPING SVG ══ -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=700&amp;size=24&amp;duration=3500&amp;pause=900&amp;color=00F7FF&amp;center=true&amp;vCenter=true&amp;width=750&amp;lines=Namaste+%F0%9F%99%8F%2C+I%27m+Ankush+Adhikari!;Full-Stack+Developer+%7C+MERN+Specialist+%F0%9F%9A%80;Cloud-Native+CI%2FCD+%7C+Kafka+%7C+Docker+%E2%98%81%EF%B8%8F;Multi-Agent+AI+%26+LLM+Systems+Builder+%F0%9F%A4%96;Open+Source+Contributor+%7C+Problem+Solver+%F0%9F%94%A5" alt="Typing SVG"/></a>
@@ -28,9 +27,16 @@
 
 ## ⚡ About Me
 
-🇳🇵 &nbsp;**Nepal** &nbsp;·&nbsp; 🚀 **MERN · Cloud · AI** &nbsp;·&nbsp; ☁️ **Kafka · Docker · AWS** &nbsp;·&nbsp; 🤖 **LLMs · Multi-Agent Systems**
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=15&amp;duration=2200&amp;pause=500&amp;color=FF6E96&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=false&amp;width=680&amp;height=120&amp;lines=🚀+Full-Stack+Engineer+%7C+MERN+Specialist;☁️+Kafka+·+Docker+·+AWS+·+Redis+·+PostgreSQL;🤖+Multi-Agent+AI+%7C+LLMs+%7C+Vector+Embeddings;📍+Crafting+awesome+systems+from+Nepal+🇳🇵" alt="About Me"/>
 
-> *"I turn coffee ☕ into distributed systems 💻"*
+<br/>
+
+| | |
+|:---:|:---|
+| 🔭 **Building** | Distributed AI systems &amp; cloud-native apps |
+| 🌱 **Exploring** | Multi-agent LLMs · Vector DBs · Edge computing |
+| 💬 **Ask me about** | MERN · System Design · Cloud Architecture |
+| ⚡ **Superpower** | Coffee ☕ → Distributed systems 💻 |
 
 </div>
 
@@ -78,5 +84,4 @@
 
 <br/>
 
-<!-- ══════════ FOOTER ══════════ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=160&amp;color=gradient&amp;customColorList=0,2,2,5,30&amp;section=footer" width="100%"/>
+
