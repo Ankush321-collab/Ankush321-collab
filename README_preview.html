@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankush Adhikari – GitHub Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <style>
+    /* ══════════ RESET ══════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0d1117;
+      --surface:  #161b22;
+      --card:     #1c2128;
+      --a1: #FF6E96;  /* pink  */
+      --a2: #00F7FF;  /* cyan  */
+      --a3: #a855f7;  /* purple*/
+      --a4: #f59e0b;  /* amber */
+      --a5: #22d3ee;  /* sky   */
+      --text:       #c9d1d9;
+      --muted:      #8b949e;
+      --glow-pink:  rgba(255,110,150,0.45);
+      --glow-cyan:  rgba(0,247,255,0.45);
+      --glow-purple:rgba(168,85,247,0.45);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ══════════ ANIMATED BG BLOBS ══════════ */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 15%  5%, rgba(168,85,247,.09) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 85% 85%, rgba(0,247,255,.06)  0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255,110,150,.05) 0%, transparent 60%);
+      pointer-events: none; z-index: 0;
+      animation: bgPulse 10s ease-in-out infinite alternate;
+    }
+    @keyframes bgPulse { 0%{opacity:.5} 100%{opacity:1} }
+
+    /* ══════════ PARTICLES ══════════ */
+    #particles { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+    .particle {
+      position: absolute; border-radius: 50%; opacity: 0;
+      animation: floatUp linear infinite;
+    }
+    @keyframes floatUp {
+      0%   { transform:translateY(100vh) scale(0); opacity:0; }
+      10%  { opacity:.7; }
+      90%  { opacity:.3; }
+      100% { transform:translateY(-10vh) scale(2); opacity:0; }
+    }
+
+    /* ══════════ HEADER WAVE ══════════ */
+    .wave-header {
+      width:100%; height:220px; position:relative; overflow:hidden;
+      background: linear-gradient(135deg,#0a001a,#1a0033,#00101a,#0a001a);
+      background-size:400% 400%;
+      animation: waveGrad 8s ease infinite;
+      display:flex; align-items:center; justify-content:center;
+    }
+    @keyframes waveGrad {
+      0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%}
+    }
+    .wave-header::before {
+      content:''; position:absolute; inset:0;
+      background: linear-gradient(135deg,#ff006e18 0%,#7c3aed18 33%,#00f7ff18 66%,#ff006e18 100%);
+      background-size:400% 400%;
+      animation: waveGrad 5s ease infinite reverse;
+    }
+    .wave-header svg { position:absolute; bottom:-2px; left:0; width:100%; }
+
+    /* ══════════ CONTAINER ══════════ */
+    .container {
+      max-width:960px; margin:0 auto;
+      padding: 0 28px 100px;
+      position:relative; z-index:1;
+    }
+
+    /* ══════════ GRADIENT BORDER MIXIN ══════════ */
+    @keyframes borderSpin {
+      0%  {background-position:0% 0%}
+      50% {background-position:100% 100%}
+      100%{background-position:0% 0%}
+    }
+
+    /* ══════════ FLOWING DIVIDER ══════════ */
+    .divider {
+      height:3px; width:100%; margin:52px 0; border-radius:3px;
+      background:linear-gradient(90deg,#ff006e,#7c3aed,#00f7ff,#f59e0b,#ff006e);
+      background-size:300% 100%;
+      animation:divFlow 3s linear infinite;
+    }
+    @keyframes divFlow { 0%{background-position:0%} 100%{background-position:300%} }
+
+    /* ══════════ SECTION TITLES ══════════ */
+    .sec-title {
+      text-align:center; font-size:1.65rem; font-weight:800;
+      margin:64px 0 36px; position:relative;
+      background: linear-gradient(135deg,var(--a1),var(--a3),var(--a2));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text; background-size:200%;
+      animation:shimmer 4s ease-in-out infinite alternate;
+    }
+    @keyframes shimmer { 0%{background-position:0%} 100%{background-position:100%} }
+    .sec-title::after {
+      content:''; display:block; height:3px; border-radius:3px;
+      margin:10px auto 0;
+      background:linear-gradient(90deg,var(--a1),var(--a2));
+      animation:underlineGrow 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes underlineGrow {
+      from{width:50px; box-shadow:0 0 8px var(--a1);}
+      to  {width:130px;box-shadow:0 0 24px var(--a2);}
+    }
+
+    /* ══════════ HERO CARD ══════════ */
+    .hero-card {
+      background:var(--surface); border-radius:22px;
+      padding:44px 36px; text-align:center;
+      margin-top:-50px; position:relative;
+      transform-style:preserve-3d;
+      transition:transform .15s ease, box-shadow .3s ease;
+      will-change:transform;
+    }
+    .hero-card::before {
+      content:''; position:absolute; inset:-2px; border-radius:24px; z-index:-1;
+      background:linear-gradient(135deg,#ff6e96,#7c3aed,#00f7ff,#f59e0b,#ff6e96);
+      background-size:300%; animation:borderSpin 5s linear infinite;
+    }
+    .hero-card:hover { box-shadow:0 40px 100px rgba(0,0,0,.7), 0 0 60px var(--glow-pink); }
+
+    /* Avatar */
+    .avatar-ring {
+      width:128px; height:128px; border-radius:50%;
+      margin:0 auto 20px; position:relative;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .avatar-ring::before {
+      content:''; position:absolute; inset:-5px; border-radius:50%;
+      background:conic-gradient(from 0deg,#ff6e96,#7c3aed,#00f7ff,#f59e0b,#ff6e96);
+      animation:spin 3s linear infinite; z-index:0;
+    }
+    @keyframes spin { to{transform:rotate(360deg)} }
+    .avatar-inner {
+      width:118px; height:118px; border-radius:50%;
+      background:linear-gradient(135deg,#1c2128,#0d1117);
+      display:flex; align-items:center; justify-content:center;
+      font-size:3.2rem; position:relative; z-index:1;
+    }
+
+    /* Name */
+    .name-grad {
+      font-size:2.6rem; font-weight:900;
+      background:linear-gradient(135deg,var(--a1) 0%,var(--a3) 40%,var(--a2) 80%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text; background-size:200%;
+      animation:shimmer 3s ease-in-out infinite alternate;
+    }
+
+    /* Badges */
+    .badge {
+      display:inline-block; padding:4px 14px; border-radius:20px;
+      font-size:.78rem; font-weight:700; margin:4px; letter-spacing:.4px;
+      animation:badgePulse 2.5s ease-in-out infinite;
+    }
+    .badge.pink   {background:rgba(255,110,150,.12);border:1px solid var(--a1);color:var(--a1);}
+    .badge.cyan   {background:rgba(0,247,255,.08);  border:1px solid var(--a2);color:var(--a2);}
+    .badge.purple {background:rgba(168,85,247,.10); border:1px solid var(--a3);color:var(--a3);}
+    .badge.amber  {background:rgba(245,158,11,.10); border:1px solid var(--a4);color:var(--a4);}
+    @keyframes badgePulse {
+      0%,100%{box-shadow:0 0 5px currentColor} 50%{box-shadow:0 0 16px currentColor}
+    }
+
+    /* ══════════ CODE BLOCK ══════════ */
+    .code-block {
+      background:#080d14; border-radius:16px;
+      padding:28px 32px; font-family:'Fira Code',monospace;
+      font-size:.9rem; line-height:2; position:relative;
+      transform-style:preserve-3d;
+      transition:transform .25s cubic-bezier(.23,1,.32,1), box-shadow .3s ease;
+      will-change:transform;
+    }
+    .code-block::before {
+      content:''; position:absolute; inset:-2px; border-radius:18px; z-index:-1;
+      background:linear-gradient(135deg,#ff6e96,#7c3aed,#00f7ff);
+      background-size:200%; animation:borderSpin 4s linear infinite;
+    }
+    .code-block:hover {
+      transform:perspective(600px) rotateX(2deg) scale(1.01);
+      box-shadow:0 24px 60px rgba(0,0,0,.5), 0 0 30px var(--glow-purple);
+    }
+    .k{color:var(--a1)} .v{color:var(--a2)} .s{color:#98c379}
+    .p{color:var(--muted)} .a{color:#e5c07b}
+
+    /* ══════════ TROPHY ROW ══════════ */
+    .trophy-wrap {
+      border-radius:14px; overflow:hidden;
+      position:relative; margin-bottom:28px;
+      transform-style:preserve-3d;
+      transition:transform .3s cubic-bezier(.23,1,.32,1), box-shadow .3s ease;
+      will-change:transform;
+    }
+    .trophy-wrap::before {
+      content:''; position:absolute; inset:-2px; border-radius:16px; z-index:-1;
+      background:linear-gradient(135deg,var(--a1),var(--a3),var(--a2));
+      background-size:200%; animation:borderSpin 3s linear infinite; opacity:0;
+      transition:opacity .3s;
+    }
+    .trophy-wrap:hover::before { opacity:1; }
+    .trophy-wrap:hover {
+      transform:perspective(800px) rotateX(3deg) scale(1.02);
+      box-shadow:0 20px 60px rgba(0,0,0,.5), 0 0 30px var(--glow-cyan);
+    }
+    .trophy-wrap img { width:100%; display:block; border-radius:12px; }
+
+    /* ══════════ STAT GRID ══════════ */
+    .stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:24px 0; }
+    .stat-card {
+      background:var(--card); border-radius:16px; padding:18px;
+      position:relative; transform-style:preserve-3d;
+      transition:transform .25s cubic-bezier(.23,1,.32,1), box-shadow .3s ease;
+      cursor:pointer; overflow:hidden; will-change:transform;
+    }
+    .stat-card::before {
+      content:''; position:absolute; inset:-2px; border-radius:18px; z-index:-1;
+      background:linear-gradient(135deg,var(--a1),var(--a3),var(--a2));
+      background-size:200%; animation:borderSpin 3s linear infinite;
+      opacity:0; transition:opacity .3s;
+    }
+    .stat-card:hover::before { opacity:1; }
+    .stat-card:hover {
+      box-shadow:0 24px 70px rgba(0,0,0,.55), 0 0 36px var(--glow-cyan);
+    }
+    .stat-card img { width:100%; border-radius:10px; display:block; }
+
+    /* ══════════ SKILLS ══════════ */
+    .skills-img-wrap {
+      display:inline-block; border-radius:14px; margin:8px;
+      transform-style:preserve-3d;
+      transition:transform .3s cubic-bezier(.23,1,.32,1), box-shadow .3s ease;
+      will-change:transform;
+    }
+    .skills-img-wrap:hover {
+      box-shadow:0 16px 50px rgba(0,0,0,.5), 0 0 30px var(--glow-purple);
+    }
+    .skills-img-wrap img { display:block; border-radius:12px; }
+
+    .pill-cloud { text-align:center; margin-top:22px; }
+    .pill {
+      display:inline-flex; align-items:center; gap:6px;
+      background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
+      border-radius:30px; padding:9px 20px; margin:5px;
+      font-size:.84rem; font-family:'Fira Code',monospace;
+      position:relative; overflow:hidden;
+      transition:transform .3s cubic-bezier(.23,1,.32,1), box-shadow .3s ease, color .2s;
+      cursor:default; will-change:transform;
+    }
+    .pill::before {
+      content:''; position:absolute; inset:-2px; border-radius:32px; z-index:-1;
+      background:linear-gradient(135deg,var(--a1),var(--a3),var(--a2));
+      background-size:200%; animation:borderSpin 3s linear infinite;
+      opacity:0; transition:opacity .3s;
+    }
+    .pill:hover::before { opacity:1; }
+    .pill:hover {
+      transform:translateY(-5px) scale(1.08);
+      box-shadow:0 12px 32px rgba(0,0,0,.45), 0 0 22px var(--glow-cyan);
+      color:#fff;
+    }
+
+    /* ══════════ PROJECT CARDS ══════════ */
+    .proj-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+
+    .proj-card {
+      background:var(--card); border-radius:18px; padding:28px 24px;
+      position:relative; transform-style:preserve-3d;
+      transition:transform .3s cubic-bezier(.23,1,.32,1), box-shadow .35s ease;
+      cursor:pointer; overflow:hidden; text-decoration:none; color:inherit;
+      will-change:transform; display:flex; flex-direction:column;
+    }
+    /* Animated gradient border — always on, intensifies on hover */
+    .proj-card::before {
+      content:''; position:absolute; inset:-2px; border-radius:20px; z-index:-1;
+      background:linear-gradient(135deg,#ff6e96,#7c3aed,#00f7ff,#f59e0b,#ff6e96);
+      background-size:400%; animation:borderSpin 5s linear infinite;
+      opacity:.25; transition:opacity .4s ease;
+    }
+    .proj-card:hover::before { opacity:1; }
+
+    /* Inner glow overlay */
+    .proj-card::after {
+      content:''; position:absolute; inset:0; border-radius:18px;
+      background:linear-gradient(135deg,rgba(255,110,150,.07),rgba(124,58,237,.07),rgba(0,247,255,.07));
+      opacity:0; transition:opacity .3s;
+    }
+    .proj-card:hover::after { opacity:1; }
+
+    .proj-card:hover {
+      box-shadow:
+        0 36px 90px rgba(0,0,0,.65),
+        0 0 50px var(--glow-pink),
+        15px 0 45px rgba(124,58,237,.25);
+    }
+
+    /* Icon with pulse ring */
+    .proj-icon-wrap {
+      display:flex; align-items:center; gap:14px; margin-bottom:16px;
+    }
+    .proj-icon {
+      width:52px; height:52px; border-radius:14px; flex-shrink:0;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.6rem; position:relative;
+    }
+    .proj-icon::after {
+      content:''; position:absolute; inset:-3px; border-radius:17px; z-index:-1;
+      background:conic-gradient(from 0deg,var(--a1),var(--a3),var(--a2),var(--a1));
+      animation:spin 4s linear infinite; opacity:.6;
+    }
+    .proj-icon.orange { background:linear-gradient(135deg,#ff6e3310,#f59e0b10); }
+    .proj-icon.blue   { background:linear-gradient(135deg,#3b82f610,#06b6d410); }
+    .proj-icon.green  { background:linear-gradient(135deg,#22d3ee10,#34d39910); }
+    .proj-icon.purple { background:linear-gradient(135deg,#a855f710,#ec489910); }
+
+    .proj-title {
+      font-size:1.02rem; font-weight:800; line-height:1.3;
+      background:linear-gradient(135deg,var(--a2),var(--a1));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text;
+    }
+
+    .proj-stat {
+      display:inline-flex; align-items:center; gap:5px;
+      font-size:.76rem; font-weight:700;
+      background:rgba(255,110,150,.12); color:var(--a1);
+      border:1px solid rgba(255,110,150,.25); border-radius:20px;
+      padding:2px 10px; margin-bottom:12px; width:fit-content;
+    }
+
+    .proj-desc {
+      font-size:.82rem; color:var(--muted); margin-bottom:8px;
+      line-height:1.7; flex:1;
+    }
+
+    .proj-desc li { margin-left:14px; margin-bottom:4px; }
+
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+    .tag {
+      padding:3px 11px; border-radius:20px; font-size:.72rem;
+      font-family:'Fira Code',monospace; font-weight:600;
+      transition:all .2s ease; cursor:default;
+    }
+    .tag.pink   {background:rgba(255,110,150,.1);color:var(--a1);border:1px solid rgba(255,110,150,.3);}
+    .tag.cyan   {background:rgba(0,247,255,.08);  color:var(--a2);border:1px solid rgba(0,247,255,.3);}
+    .tag.purple {background:rgba(168,85,247,.1);  color:var(--a3);border:1px solid rgba(168,85,247,.3);}
+    .tag.amber  {background:rgba(245,158,11,.1);  color:var(--a4);border:1px solid rgba(245,158,11,.3);}
+    .tag.green  {background:rgba(34,211,238,.08); color:var(--a5);border:1px solid rgba(34,211,238,.3);}
+    .tag:hover  {transform:scale(1.1) translateY(-2px); box-shadow:0 4px 14px rgba(0,0,0,.3);}
+
+    /* GitHub link inside card */
+    .gh-link {
+      display:inline-flex; align-items:center; gap:6px;
+      font-size:.78rem; color:var(--a2); margin-top:12px;
+      text-decoration:none; font-weight:600;
+      transition:color .2s, transform .2s;
+    }
+    .gh-link:hover { color:var(--a1); transform:translateX(4px); }
+
+    /* ══════════ HIGHLIGHTS TABLE ══════════ */
+    .hl-table {
+      width:100%; border-collapse:separate; border-spacing:12px;
+    }
+    .hl-table td {
+      background:var(--card); border-radius:12px; padding:18px 20px;
+      font-size:.86rem; position:relative;
+      transform-style:preserve-3d;
+      transition:transform .25s cubic-bezier(.23,1,.32,1), box-shadow .3s;
+      will-change:transform; vertical-align:top;
+    }
+    .hl-table td::before {
+      content:''; position:absolute; inset:-2px; border-radius:14px; z-index:-1;
+      background:linear-gradient(135deg,var(--a1),var(--a3),var(--a2));
+      background-size:200%; animation:borderSpin 3s linear infinite;
+      opacity:0; transition:opacity .3s;
+    }
+    .hl-table td:hover::before { opacity:1; }
+    .hl-table td:hover {
+      transform:perspective(500px) rotateX(4deg) rotateY(2deg) scale(1.03);
+      box-shadow:0 18px 50px rgba(0,0,0,.5), 0 0 25px var(--glow-purple);
+    }
+    .hl-table .hl-head {
+      font-weight:700; font-size:.9rem; margin-bottom:8px;
+      background:linear-gradient(135deg,var(--a2),var(--a1));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text;
+    }
+
+    /* ══════════ SOCIAL BUTTONS ══════════ */
+    .social-row { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin:32px 0; }
+    .soc-btn {
+      display:inline-flex; align-items:center; gap:8px;
+      padding:11px 24px; border-radius:14px; text-decoration:none;
+      font-weight:700; font-size:.88rem; position:relative; overflow:hidden;
+      transition:transform .25s cubic-bezier(.23,1,.32,1), box-shadow .3s;
+      will-change:transform; color:#fff;
+    }
+    .soc-btn::before {
+      content:''; position:absolute; inset:-2px; border-radius:16px; z-index:-1;
+      background:inherit; filter:blur(10px); opacity:0; transition:opacity .3s;
+    }
+    .soc-btn:hover::before { opacity:.65; }
+    .soc-btn:hover {
+      transform:translateY(-6px) scale(1.07) rotateX(5deg);
+      box-shadow:0 18px 50px rgba(0,0,0,.45);
+    }
+    .soc-btn.li { background:linear-gradient(135deg,#0A66C2,#004182); }
+    .soc-btn.tw { background:linear-gradient(135deg,#1DA1F2,#0d6fa8); }
+    .soc-btn.ig { background:linear-gradient(135deg,#E4405F,#833AB4,#fd1d1d); }
+    .soc-btn.lc { background:linear-gradient(135deg,#FE7A16,#c45c00); }
+    .soc-btn.hr { background:linear-gradient(135deg,#2EC866,#1a7d42); }
+    .soc-btn.cc { background:linear-gradient(135deg,#ff9800,#e65100); }
+
+    /* ══════════ FOOTER ══════════ */
+    .footer { text-align:center; padding:56px 24px 28px; color:var(--muted); font-size:.86rem; }
+    .footer strong { color:var(--a1); }
+
+    /* ══════════ RESPONSIVE ══════════ */
+    @media(max-width:640px){
+      .stat-grid, .proj-grid { grid-template-columns:1fr; }
+      .hero-card { padding:30px 20px; }
+      .name-grad { font-size:1.9rem; }
+    }
+
+    /* ══════════ SCROLL REVEAL ══════════ */
+    .reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- PARTICLES -->
+<div id="particles"></div>
+
+<!-- WAVE HEADER -->
+<div class="wave-header">
+  <svg viewBox="0 0 1200 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C150,80 350,0 600,40 C850,80 1050,0 1200,40 L1200,80 L0,80 Z" fill="#0d1117"/>
+  </svg>
+</div>
+
+<div class="container">
+
+  <!-- ═══ HERO ═══ -->
+  <div class="hero-card reveal" id="heroCard">
+    <div class="avatar-ring">
+      <div class="avatar-inner">👨‍💻</div>
+    </div>
+    <div class="name-grad">Ankush Adhikari</div>
+    <p style="color:var(--muted); margin:10px 0 18px; font-size:1rem;">
+      FullStack Developer &nbsp;|&nbsp; MERN Specialist
+    </p>
+    <div>
+      <span class="badge pink">🔥 Open to Work</span>
+      <span class="badge cyan">⚡ MERN Stack</span>
+      <span class="badge purple">🚀 Full-Stack</span>
+      <span class="badge amber">🇳🇵 Nepal</span>
+    </div>
+    <p style="margin-top:18px; font-size:.9rem; color:var(--muted);">
+      Building Digital Experiences with Code &amp; Passion 💻🌱
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <div class="sec-title reveal">⚡ About Me</div>
+  <div class="code-block reveal">
+    <span class="k">name</span><span class="p">        : </span><span class="s">"Ankush Adhikari"</span><br/>
+    <span class="k">role</span><span class="p">        : </span><span class="s">"Full-Stack Developer | MERN Specialist"</span><br/>
+    <span class="k">location</span><span class="p">    : </span><span class="s">"Nepal 🇳🇵"</span><br/>
+    <span class="k">focus</span><span class="p">       : </span><span class="s">"Scalable cloud-native web apps &amp; AI systems"</span><br/>
+    <span class="k">stack</span><span class="p">       : </span><span class="a">[</span><span class="s">"Node.js"</span><span class="p">, </span><span class="s">"React"</span><span class="p">, </span><span class="s">"Next.js"</span><span class="p">, </span><span class="s">"PostgreSQL"</span><span class="p">, </span><span class="s">"Docker"</span><span class="p">, </span><span class="s">"Redis"</span><span class="a">]</span><br/>
+    <span class="k">ai_ml</span><span class="p">       : </span><span class="a">[</span><span class="s">"LLMs"</span><span class="p">, </span><span class="s">"FastAPI"</span><span class="p">, </span><span class="s">"Vector Embeddings"</span><span class="a">]</span><br/>
+    <span class="k">cloud</span><span class="p">       : </span><span class="a">[</span><span class="s">"AWS S3"</span><span class="p">, </span><span class="s">"Firebase"</span><span class="p">, </span><span class="s">"MongoDB Atlas"</span><span class="a">]</span><br/>
+    <span class="k">fun_fact</span><span class="p">    : </span><span class="s">"I turn coffee ☕ into distributed systems 💻"</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ STATS ═══ -->
+  <div class="sec-title reveal">📊 GitHub Stats &amp; Activity</div>
+
+  <div class="trophy-wrap reveal">
+    <img src="https://github-profile-trophy.vercel.app/?username=Ankush321-collab&theme=radical&no-frame=true&row=1&column=7&margin-w=8" alt="Trophies"/>
+  </div>
+
+  <div class="stat-grid reveal">
+    <div class="stat-card">
+      <img src="https://github-readme-stats.vercel.app/api?username=Ankush321-collab&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=FF6E96&icon_color=00F7FF&text_color=c9d1d9" alt="GitHub Stats"/>
+    </div>
+    <div class="stat-card">
+      <img src="https://streak-stats.demolab.com?user=Ankush321-collab&theme=radical&hide_border=true&background=0d1117&ring=FF6E96&fire=FF6E96&currStreakLabel=00F7FF" alt="Streak Stats"/>
+    </div>
+    <div class="stat-card" style="grid-column:1/-1;">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ankush321-collab&theme=react-dark&hide_border=true&bg_color=0d1117&color=FF6E96&line=00F7FF&point=ffffff&area=true&area_color=FF6E9620" alt="Activity Graph"/>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ TECH STACK ═══ -->
+  <div class="sec-title reveal">🚀 Tech Stack &amp; Tools</div>
+  <p style="text-align:center;" class="reveal">
+    <span class="skills-img-wrap">
+      <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,mongodb,tailwind,bootstrap&theme=dark" alt="Frontend" />
+    </span><br/>
+    <span class="skills-img-wrap">
+      <img src="https://skillicons.dev/icons?i=php,mysql,java,cpp,python,firebase,git,github,docker&theme=dark" alt="Backend" />
+    </span><br/>
+    <span class="skills-img-wrap">
+      <img src="https://skillicons.dev/icons?i=redis,postgresql,kafka,aws,linux,vscode&theme=dark" alt="Cloud" />
+    </span>
+  </p>
+
+  <div class="pill-cloud reveal">
+    <span class="pill">📊 Numpy</span>
+    <span class="pill">🐼 Pandas</span>
+    <span class="pill">📈 Matplotlib</span>
+    <span class="pill">🤖 Scikit-Learn</span>
+    <span class="pill">🧠 LLMs</span>
+    <span class="pill">⚡ FastAPI</span>
+    <span class="pill">🐘 PostgreSQL</span>
+    <span class="pill">📨 Kafka</span>
+    <span class="pill">🔴 Redis</span>
+    <span class="pill">🐳 Docker</span>
+    <span class="pill">☁️ AWS S3</span>
+    <span class="pill">🔥 Firebase</span>
+    <span class="pill">🍃 MongoDB</span>
+    <span class="pill">🐍 Python</span>
+    <span class="pill">⚡ C++</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <div class="sec-title reveal">💼 Featured Projects</div>
+  <div class="proj-grid reveal">
+
+    <!-- PROJECT 1 -->
+    <a class="proj-card" href="https://github.com/Ankush321-collab" target="_blank">
+      <div class="proj-icon-wrap">
+        <div class="proj-icon orange">🚀</div>
+        <span class="proj-title">Automated Git-Based Deployment Platform</span>
+      </div>
+      <div class="proj-stat">📉 Reduced deployment effort by 80%</div>
+      <ul class="proj-desc">
+        <li>Architected a <strong>cloud-native CI/CD</strong> platform automating building, testing &amp; deployment directly from Git repositories.</li>
+        <li>Engineered event-driven workflows with <strong>Apache Kafka</strong> + containerized pipelines with <strong>Docker</strong>; scalable artifact storage on <strong>AWS S3</strong> with reverse-proxy subdomain routing.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag amber">AWS</span>
+        <span class="tag pink">Kafka</span>
+        <span class="tag cyan">ClickHouse</span>
+        <span class="tag purple">PostgreSQL</span>
+        <span class="tag green">Next.js</span>
+        <span class="tag cyan">Docker</span>
+      </div>
+      <span class="gh-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        View on GitHub →
+      </span>
+    </a>
+
+    <!-- PROJECT 2 -->
+    <a class="proj-card" href="https://github.com/Ankush321-collab" target="_blank">
+      <div class="proj-icon-wrap">
+        <div class="proj-icon blue">🤖</div>
+        <span class="proj-title">Autonomous Multi-Agent GitHub Issue Resolver</span>
+      </div>
+      <div class="proj-stat">📈 Improved reliability by 30%</div>
+      <ul class="proj-desc">
+        <li>Architected a <strong>production-grade multi-agent system</strong> that auto-analyzes GitHub issues, generates execution plans, writes code &amp; creates PRs using <strong>LLM-based agents</strong>.</li>
+        <li>Designed scalable microservices with <strong>FastAPI &amp; Node.js</strong>; fault-tolerant state management, retry mechanisms &amp; distributed workflows for resilient autonomous operation.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag pink">Python</span>
+        <span class="tag cyan">FastAPI</span>
+        <span class="tag green">Node.js</span>
+        <span class="tag purple">PostgreSQL</span>
+        <span class="tag amber">Redis</span>
+        <span class="tag pink">LLM</span>
+      </div>
+      <span class="gh-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        View on GitHub →
+      </span>
+    </a>
+
+    <!-- PROJECT 3 -->
+    <a class="proj-card" href="https://github.com/Ankush321-collab" target="_blank">
+      <div class="proj-icon-wrap">
+        <div class="proj-icon green">⚙️</div>
+        <span class="proj-title">Mini-K8S: Lightweight Container Orchestrator</span>
+      </div>
+      <div class="proj-stat">🏗️ 5-Stage Job State Machine</div>
+      <ul class="proj-desc">
+        <li>Architected a lightweight container orchestrator using <strong>Node.js &amp; BullMQ</strong>; designed a 5-stage job state machine with <strong>PostgreSQL</strong> row-level locking for concurrency.</li>
+        <li>Integrated <strong>Docker Engine API</strong> to pull, run &amp; auto-cleanup workloads; built a high-observability <strong>React (TanStack Start)</strong> dashboard with live-streaming terminal logs.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag green">Node.js</span>
+        <span class="tag cyan">React.js</span>
+        <span class="tag pink">BullMQ</span>
+        <span class="tag amber">Redis</span>
+        <span class="tag purple">PostgreSQL</span>
+        <span class="tag cyan">Docker</span>
+      </div>
+      <span class="gh-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        View on GitHub →
+      </span>
+    </a>
+
+    <!-- PROJECT 4 -->
+    <a class="proj-card" href="https://github.com/Ankush321-collab" target="_blank">
+      <div class="proj-icon-wrap">
+        <div class="proj-icon purple">🧠</div>
+        <span class="proj-title">AI-Powered Resume Analyzer &amp; Job Matcher</span>
+      </div>
+      <div class="proj-stat">⚡ Decreased API latency by 40%</div>
+      <ul class="proj-desc">
+        <li>Designed a scalable backend with <strong>Redis caching</strong> &amp; <strong>Kafka-based async job processing</strong> to support high-concurrency requests.</li>
+        <li>Built an AI platform leveraging <strong>LLMs &amp; vector embeddings</strong> for semantic similarity scoring between resumes &amp; job descriptions; managed data with <strong>PostgreSQL &amp; Prisma ORM</strong>.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag green">Next.js</span>
+        <span class="tag cyan">GraphQL</span>
+        <span class="tag pink">Kafka</span>
+        <span class="tag purple">PostgreSQL</span>
+        <span class="tag amber">Redis</span>
+        <span class="tag pink">LLM</span>
+      </div>
+      <span class="gh-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        View on GitHub →
+      </span>
+    </a>
+
+  </div><!-- /proj-grid -->
+
+  <div class="divider"></div>
+
+  <!-- ═══ HIGHLIGHTS ═══ -->
+  <div class="sec-title reveal">✨ Highlights &amp; Skills</div>
+  <table class="hl-table reveal">
+    <tr>
+      <td>
+        <div class="hl-head">🔐 Security</div>
+        JWT Auth · QR Gate Pass · Face Recognition · OAuth 2.0
+      </td>
+      <td>
+        <div class="hl-head">☁️ Cloud &amp; DevOps</div>
+        AWS S3 · Firebase · MongoDB Atlas · Docker · CI/CD
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="hl-head">🤖 AI / ML</div>
+        LLMs · Vector Embeddings · Scikit-Learn · FastAPI Agents
+      </td>
+      <td>
+        <div class="hl-head">💡 UI / UX</div>
+        Tailwind CSS · Bootstrap · React · TanStack Start · Next.js
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="hl-head">🛠️ Languages</div>
+        JavaScript · TypeScript · Python · C++ · Java · PHP
+      </td>
+      <td>
+        <div class="hl-head">📦 Data &amp; Messaging</div>
+        PostgreSQL · MongoDB · Redis · Apache Kafka · ClickHouse
+      </td>
+    </tr>
+  </table>
+
+  <div class="divider"></div>
+
+  <!-- ═══ CONNECT ═══ -->
+  <div class="sec-title reveal">🌐 Connect with Me</div>
+  <div class="social-row reveal">
+    <a href="https://linkedin.com/in/ankush-adhikari" target="_blank" class="soc-btn li">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://twitter.com/ankush" target="_blank" class="soc-btn tw">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+      Twitter
+    </a>
+    <a href="https://instagram.com/adhikariankush" target="_blank" class="soc-btn ig">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Instagram
+    </a>
+    <a href="https://leetcode.com/ankushadhikari321" target="_blank" class="soc-btn lc">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+      LeetCode
+    </a>
+    <a href="https://www.hackerrank.com/ankushadhikari" target="_blank" class="soc-btn hr">
+      <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24C10.715 24 2.25 19.115 1.608 18 .963 16.885.963 7.115 1.608 6 2.253 4.886 10.715 0 12 0zm-1.912 6.889c-.415.35-.438.955-.438 1.57v7.092c0 .615.023 1.22.438 1.57.415.35 1.07.45 1.912.45s1.497-.1 1.912-.45c.415-.35.438-.955.438-1.57V8.46c0-.615-.023-1.22-.438-1.57-.415-.35-1.07-.45-1.912-.45s-1.497.1-1.912.45z"/></svg>
+      HackerRank
+    </a>
+    <a href="https://www.codechef.com/users/ankushadhikari" target="_blank" class="soc-btn cc">
+      🍴 CodeChef
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>Designed with ❤️ by <strong>Ankush Adhikari</strong></p>
+    <p style="margin-top:6px; font-size:.78rem; opacity:.5;">Let's build something amazing together 🚀</p>
+  </div>
+
+</div><!-- /container -->
+
+<script>
+// ══════════ PARTICLES ══════════
+const pCont = document.getElementById('particles');
+const colors = ['#FF6E96','#00F7FF','#a855f7','#f59e0b','#22d3ee'];
+for (let i = 0; i < 40; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  const s = 1 + Math.random() * 3;
+  p.style.cssText = `
+    left:${Math.random()*100}vw;
+    width:${s}px; height:${s}px;
+    background:${colors[Math.floor(Math.random()*colors.length)]};
+    animation-duration:${9+Math.random()*14}s;
+    animation-delay:${Math.random()*12}s;
+    box-shadow:0 0 ${s*2}px currentColor;
+  `;
+  pCont.appendChild(p);
+}
+
+// ══════════ UNIVERSAL 3D TILT ══════════
+function applyTilt(selector, maxTilt = 12, scaleVal = 1.04, perspective = 700) {
+  document.querySelectorAll(selector).forEach(el => {
+    el.addEventListener('mousemove', e => {
+      const r  = el.getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      const cy = r.top  + r.height / 2;
+      const dx = (e.clientX - cx) / (r.width  / 2);
+      const dy = (e.clientY - cy) / (r.height / 2);
+      el.style.transition = 'transform .08s ease, box-shadow .2s ease';
+      el.style.transform  = `perspective(${perspective}px) rotateX(${-dy*maxTilt}deg) rotateY(${dx*maxTilt}deg) scale(${scaleVal})`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transition = 'transform .5s cubic-bezier(.23,1,.32,1), box-shadow .4s ease';
+      el.style.transform  = 'perspective(700px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+}
+
+// Apply 3D tilt to EVERY interactive section
+applyTilt('#heroCard',      6,  1.015, 1000);
+applyTilt('.code-block',    5,  1.01,  800);
+applyTilt('.trophy-wrap',   4,  1.02,  900);
+applyTilt('.stat-card',     8,  1.03,  700);
+applyTilt('.proj-card',     14, 1.04,  600);
+applyTilt('.hl-table td',   10, 1.04,  600);
+applyTilt('.soc-btn',       8,  1.06,  500);
+applyTilt('.skills-img-wrap', 6, 1.03, 700);
+applyTilt('.pill',          6,  1.08,  400);
+
+// ══════════ SCROLL REVEAL ══════════
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = `${i * 0.04}s`;
+  observer.observe(el);
+});
+
+// ══════════ TAG RIPPLE ══════════
+document.querySelectorAll('.tag, .pill').forEach(tag => {
+  tag.addEventListener('click', function(e) {
+    const rip = document.createElement('span');
+    const sz  = Math.max(this.offsetWidth, this.offsetHeight);
+    rip.style.cssText = `
+      position:absolute; border-radius:50%;
+      width:${sz}px; height:${sz}px;
+      background:rgba(0,247,255,0.35);
+      transform:translate(-50%,-50%) scale(0);
+      animation:ripple .55s linear forwards;
+      left:${e.offsetX}px; top:${e.offsetY}px;
+      pointer-events:none;
+    `;
+    this.style.position = 'relative';
+    this.style.overflow = 'hidden';
+    this.appendChild(rip);
+    setTimeout(() => rip.remove(), 560);
+  });
+});
+
+const rs = document.createElement('style');
+rs.textContent = `@keyframes ripple { to { transform:translate(-50%,-50%) scale(3.5); opacity:0; } }`;
+document.head.appendChild(rs);
+</script>
+</body>
+</html>
